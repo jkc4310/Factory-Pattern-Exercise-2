@@ -29,9 +29,6 @@ namespace FactoryPatternExercise2
             Console.WriteLine("I am saving data from SQL database");
         }
 
-        void IDataAccess.LoadData()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

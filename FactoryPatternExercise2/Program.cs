@@ -16,6 +16,11 @@
             var products = database.LoadData();
             database.SaveData();
 
+
+            foreach (var product in products)
+            {
+                Console.WriteLine($"Name: {product.Name} Price: {product.Price}");
+            }
         }
     }
 }

@@ -9,10 +9,10 @@ namespace FactoryPatternExercise2
 
         public static List<Product> Products = new List<Product>()
         {
-            new Product (){Name ="Xbox", Price = 350},
-            new Product (){Name ="Guitar", Price = 900},
-            new Product (){Name ="Playstation", Price = 500},
-            new Product (){Name ="skateboard", Price = 45},
+            new Product (){Name = "Xbox", Price = 350},
+            new Product (){Name = "Guitar", Price = 900},
+            new Product (){Name = "Playstation", Price = 500},
+            new Product (){Name = "skateboard", Price = 45},
         };
 
         public List<Product> LoadData()
@@ -26,9 +26,6 @@ namespace FactoryPatternExercise2
             Console.WriteLine("I am saving data from Mongo database");
         }
 
-        void IDataAccess.LoadData()
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

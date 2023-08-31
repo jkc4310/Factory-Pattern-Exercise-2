@@ -3,9 +3,11 @@ namespace FactoryPatternExercise2
 {
 	public interface IDataAccess
 	{
-		public void LoadData();
+		public List<Product> LoadData();
 
 		public void SaveData();
+
+		
 	}
 }
 
